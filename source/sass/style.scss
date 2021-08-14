@@ -1,1 +1,65 @@
 // Начните писать стили здесь
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+@import "header.scss";
+@import "main-index.scss";
+@import "footer.scss";
+@import "main-catalog.scss";
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", Arial;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  /*color: var(--basic-white);
+  background-color: var(--basic-green);
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100%; /*займи все пространство*/
+}
+h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+p {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+}
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #68B738;
+  padding: 7px 44px;
+  text-decoration: none; /*убираем подчеркивание у ссылок*/
+  color: #FFFFFF;
+}
+.visually-hidden { /*скрывает не нужные заголовки*/
+  /*display: none;*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

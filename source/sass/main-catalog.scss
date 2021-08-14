@@ -1,0 +1,84 @@
+
+.page-main {
+  padding: 0;
+}
+.catalog {
+  width: 320px;
+}
+.catalog__heading {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 41px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.catalog__item {
+  /*display: flex;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.catalog__item h2 {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase; /*все заглавные*/
+}
+.catalog__item table {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  width: 142px;
+}
+.extra {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.extra__heading {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.extra__goods-list {
+  list-style: none;
+  padding-left: 0;
+}
+.extra__goods-item {
+  border-bottom: 1px solid #CDCDCD;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+.extra__goods-item h3 {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.extra__goods-item table {
+  width: 280px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+}
+.cell-2 {
+  text-align: right;
+}
+.extra__other {
+  background-image: url("../img/cat-mini.jpg");
+  width: 280px;
+  height: 290px;
+}
+.extra__other p {
+  width: 161px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-family: Arial;
+  text-align: center;
+  padding-left: 59px;
+  padding-top: 187px;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -32,21 +33,23 @@
         <div class="catalog__list">
           <div class="catalog__item"> <!--курица 500г-->
             <a href="#"><img src="img/cat-energy-chicken.png" width="68" height="86" alt=""></a>
-            <h2 class="catalog-item-heading">Cat Energy PRO 500 г</h2>
-            <table>
-              <tr>
-                <td>Масса</td>
-                <td>500 г</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р</td>
-              </tr>
-            </table>
+            <div class="catalog-item-description">
+              <h2 class="catalog-item-heading">Cat Energy PRO 500 г</h2>
+              <table>
+                <tr>
+                  <td>Масса</td>
+                  <td class="cell-2">500 г</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td class="cell-2">Курица</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td class="cell-2">700 Р</td>
+                </tr>
+              </table>
+            </div>
             <a class="button" href="#">заказать</a>
           </div>
           <div class="catalog__item"> <!--курица 1000г-->
@@ -55,15 +58,15 @@
             <table>
               <tr>
                 <td>Масса</td>
-                <td>1000 г</td>
+                <td class="cell-2">1000 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
-                <td>Курица</td>
+                <td class="cell-2">Курица</td>
               </tr>
               <tr>
                 <td>Цена</td>
-                <td>1000 Р</td>
+                <td class="cell-2">1000 Р</td>
               </tr>
             </table>
             <a class="button" href="#">заказать</a>
@@ -74,34 +77,34 @@
             <table>
               <tr>
                 <td>Масса</td>
-                <td>500 г</td>
+                <td class="cell-2">500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
-                <td>Рыба</td>
+                <td class="cell-2">Рыба</td>
               </tr>
               <tr>
                 <td>Цена</td>
-                <td>700 Р</td>
+                <td class="cell-2">700 Р</td>
               </tr>
             </table>
             <a class="button" href="#">заказать</a>
           </div>
-          <div class="pcatalog__item"> <!--рыба 1000г-->
+          <div class="catalog__item"> <!--рыба 1000г-->
             <a href="#"><img src="img/cat-energy-fish.png" width="84" height="101" alt=""></a>
             <h2 class="catalog__item-heading">Cat Energy PRO 1000 г</h2>
             <table>
               <tr>
                 <td>Масса</td>
-                <td>500 г</td>
+                <td class="cell-2">500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
-                <td>Рыба</td>
+                <td class="cell-2">Рыба</td>
               </tr>
               <tr>
                 <td>Цена</td>
-                <td>1000 Р</td>
+                <td class="cell-2">1000 Р</td>
               </tr>
             </table>
             <a class="button" href="#">заказать</a>
@@ -112,15 +115,15 @@
             <table>
               <tr>
                 <td>Масса</td>
-                <td>500 г</td>
+                <td class="cell-2">500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
-                <td>Гречка</td>
+                <td class="cell-2">Гречка</td>
               </tr>
               <tr>
                 <td>Цена</td>
-                <td>400 Р</td>
+                <td class="cell-2">400 Р</td>
               </tr>
             </table>
             <a class="button" href="#">заказать</a>
@@ -131,15 +134,15 @@
             <table>
               <tr>
                 <td>Масса</td>
-                <td>500 г</td>
+                <td class="cell-2">500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
-                <td>Гречка</td>
+                <td class="cell-2">Гречка</td>
               </tr>
               <tr>
                 <td>Цена</td>
-                <td>700 Р</td>
+                <td class="cell-2">700 Р</td>
               </tr>
             </table>
             <a class="button" href="#">заказать</a>
@@ -150,15 +153,15 @@
             <table>
               <tr>
                 <td>Масса</td>
-                <td>500 г</td>
+                <td class="cell-2">500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
-                <td>Рис</td>
+                <td class="cell-2">Рис</td>
               </tr>
               <tr>
                 <td>Цена</td>
-                <td>500 Р</td>
+                <td class="cell-2">500 Р</td>
               </tr>
             </table>
             <a class="button" href="#">заказать</a>
@@ -171,15 +174,15 @@
         </div>
       </section>
       <section class="extra">
-        <h2 class="extra__heading">Дополнительные товары</h2>
+        <p class="extra__heading">Дополнительные товары</p>
         <div class="extra__goods">
           <ul class="extra__goods-list">
             <li class="extra__goods-item">
               <h3>Сахарозаменитель</h3>
               <table>
                 <tr>
-                  <td>1 упаковка (100 г)</td>
-                  <td>200 Р.</td>
+                  <td class="cell-1">1 упаковка (100 г)</td>
+                  <td class="cell-2">200 Р.</td>
                 </tr>
               </table>
               <a class="button" href="#">заказать</a>
@@ -189,7 +192,7 @@
               <table>
                 <tr>
                   <td>5 литров</td>
-                  <td>50 Р.</td>
+                  <td class="cell-2">50 Р.</td>
                 </tr>
               </table>
               <a class="button" href="#">заказать</a>
@@ -199,7 +202,7 @@
               <table>
                 <tr>
                   <td>1 литр</td>
-                  <td>100 Р.</td>
+                  <td class="cell-2">100 Р.</td>
                 </tr>
               </table>
               <a class="button" href="#">заказать</a>
@@ -209,7 +212,7 @@
               <table>
                 <tr>
                   <td>1 упаковка (30 г)</td>
-                  <td>300 Р.</td>
+                  <td class="cell-2">300 Р.</td>
                 </tr>
               </table>
               <a class="button" href="#">заказать</a>
@@ -230,7 +233,7 @@
         </div>
         <img src="img/map-min.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
-      <img src="img/cat-energy.svg" width="129" height="24" alt="Логотип">
+      <img class="page-footer-icon" src="img/cat-energy.svg" width="129" height="24" alt="Логотип">
       <!--<section class="footer__social">-->
         <ul class="page-footer__social social">
           <li class="social__item"> <!--vk-->
