@@ -1,0 +1,28 @@
+.food {
+  width: 320px;
+  background-image: url("../img/cat-green.jpg");
+  background-repeat: no-repeat;
+}
+
+.food__heading {
+  color: #ffffff;
+}
+
+.food__button {
+  padding: 7px 72px;
+  margin-top: 56px;
+}
+
+.food__description {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 310px;
+}
+
+.food__cup {
+  display: block;
+  position: absolute;
+  top: 283px;
+  left: 20px;
+}

@@ -1,16 +1,19 @@
 // Начните писать стили здесь
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 @import "header.scss";
-@import "main-index.scss";
+@import "food.scss";
+@import "goels.scss";
+@import "advantages.scss";
+@import "example.scss";
+@import "catalog.scss";
+@import "extra.scss";
 @import "footer.scss";
-@import "main-catalog.scss";
 
 body {
   width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Oswald", Arial;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -21,35 +24,46 @@ body {
   background-repeat: no-repeat;
   min-height: 100%; /*займи все пространство*/
 }
+
 h1 {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
+
 h2 {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
+
 h3 {
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
 }
+
 p {
   font-size: 14px;
   line-height: 14px;
   text-align: left;
 }
+
+span {
+  text-transform: uppercase;
+}
+
 .button {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  background-color: #68B738;
-  padding: 7px 44px;
+  background-color: #68b738;
+  /*padding: 7px 44px;*/
   text-decoration: none; /*убираем подчеркивание у ссылок*/
-  color: #FFFFFF;
+  color: #ffffff;
+  text-transform: uppercase;
 }
+
 .visually-hidden { /*скрывает не нужные заголовки*/
   /*display: none;*/
   position: absolute;
