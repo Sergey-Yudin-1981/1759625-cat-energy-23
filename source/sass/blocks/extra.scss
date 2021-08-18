@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-.cards__list {
+.cards {
   list-style: none;
   padding-left: 0;
 }
@@ -22,6 +22,7 @@
   margin: 0;
   padding-top: 13px;
   padding-bottom: 13px;
+  text-transform: uppercase;
 }
 
 .cards__table {
@@ -30,18 +31,20 @@
   text-align: left;
   font-size: 14px;
   line-height: 14px;
+  font-family: "Arial", sans-serif;
 }
 
 .cards__cell-2 {
   text-align: right;
 }
 
-.cards-button {
-  padding: 10px 109px;
+.cards__button {
+  padding: 10px 113px;
 }
 
 .extra__other {
   background-image: url("../img/cat-mini.jpg");
+  background-repeat: no-repeat;
   width: 280px;
   height: 290px;
 }

@@ -1,12 +1,14 @@
-legend {
+.example__min-tytle {
   /*display: block;*/
   width: 77px;
-  position: relative;
-  top: 40px;
-  left: 22px;
+  position: absolute;
+  top: 35px;
+  left: 24px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  background-color: #eaeaea;
 }
 
 .example {
@@ -38,37 +40,27 @@ legend {
   width: 124px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  position: relative;
 }
 
-.example__max {
-  width: 124px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-}
-
-.example__min p {
+.example__min-weight {
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 18px;
   margin: 0;
   font-size: 24px;
   line-height: 24px;
 }
 
-.example__max p {
-  text-align: center;
-  margin: 0;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.example-cash {
+.example__cash {
   display: flex;
   justify-content: center;
 }
 
-.example-cash__description {
+.example__cash-description {
   margin-right: 5px;
 }
 
-.example-slider__button {
+.example__slider-button {
   margin-right: 5px;
 }

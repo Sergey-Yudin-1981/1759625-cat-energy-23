@@ -31,7 +31,7 @@
       <section class="catalog">
         <h1 class="catalog__heading">Каталог продукции</h1>
         <div class="catalog__list">
-          <div class="item catalog__item"> <!--курица 500г-->
+          <div class="catalog__item item"> <!--курица 500г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-chicken.png" width="68" height="86" alt=""></a>
               <div class="item__description">
@@ -52,9 +52,9 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item"> <!--курица 1000г-->
+          <div class="catalog__item item"> <!--курица 1000г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-chicken.png" width="84" height="101" alt=""></a>
               <div class="item__description">
@@ -75,9 +75,9 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item"> <!--рыба 500г-->
+          <div class="catalog__item item"> <!--рыба 500г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-fish.png" width="68" height="86" alt=""></a>
               <div class="item__description">
@@ -98,9 +98,9 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item"> <!--рыба 1000г-->
+          <div class="catalog__item item"> <!--рыба 1000г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-fish.png" width="84" height="101" alt=""></a>
               <div class="item__description">
@@ -121,9 +121,9 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item"> <!--гречка 500г-->
+          <div class="catalog__item item"> <!--гречка 500г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-buckwheat.png" width="68" height="86" alt=""></a>
               <div class="item__description">
@@ -144,9 +144,9 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item"> <!--гречка 1000г-->
+          <div class="catalog__item item"> <!--гречка 1000г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-fish.png" width="84" height="101" alt=""></a>
               <div class="item__description">
@@ -167,9 +167,9 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item"> <!--рис 500г-->
+          <div class="catalog__item item"> <!--рис 500г-->
             <div class="item__double">
               <a href="#"><img src="img/cat-energy-buckwheat.png" width="68" height="86" alt=""></a>
               <div class="item__description">
@@ -190,69 +190,77 @@
                 </table>
               </div>
             </div>
-            <a class="item-button button" href="#">заказать</a>
+            <a class="item__button button" href="#">заказать</a>
           </div>
-          <div class="item catalog__item">
-            <p>Показать еще 100500 товаров</p>
-            <p>На самом деле вкусов гораздо больше!</p>
-            <a class="item-button item__grey" href="#">показать все</a>
+          <div class="catalog__item item">
+            <p class="item__title">Показать еще 100500 товаров</p>
+            <p class="item__description">На самом деле вкусов гораздо больше!</p>
+            <a class="item__grey" href="#">показать все</a>
           </div>
         </div>
       </section>
       <section class="extra">
-        <p class="extra__heading">Дополнительные товары</p>
-        <div class="cards extra__goods">
-          <ul class="cards__list">
+        <h2 class="extra__heading title">Дополнительные товары</h2>
+        <div class="extra__goods">
+          <ul class="extra__list cards">
             <li class="cards__item">
-              <h3 class="cards__description">Сахарозаменитель</h3>
-              <table class="cards__table">
-                <tr>
-                  <td class="cards__cell-1">1 упаковка (100 г)</td>
-                  <td class="cards__cell-2">200 Р.</td>
-                </tr>
-              </table>
-              <a class="cards-button button" href="#">заказать</a>
+              <div class="cards__item-wrapper">
+                <h3 class="cards__description">Сахарозаменитель</h3>
+                <table class="cards__table">
+                  <tr>
+                    <td class="cards__cell-1">1 упаковка (100 г)</td>
+                    <td class="cards__cell-2">200 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="cards__button button" href="#">заказать</a>
             </li>
             <li class="cards__item">
-              <h3 class="cards__description">питьевая вода</h3>
-              <table class="cards__table">
-                <tr>
-                  <td class="cards__cell-1">5 литров</td>
-                  <td class="cards__cell-2">50 Р.</td>
-                </tr>
-              </table>
-              <a class="cards-button button" href="#">заказать</a>
+              <div class="cards__item-wrapper">
+                <h3 class="cards__description">питьевая вода</h3>
+                <table class="cards__table">
+                  <tr>
+                    <td class="cards__cell-1">5 литров</td>
+                    <td class="cards__cell-2">50 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="cards__button button" href="#">заказать</a>
             </li>
             <li class="cards__item">
-              <h3 class="cards__description">молоко</h3>
-              <table class="cards__table">
-                <tr>
-                  <td class="cards__cell-1">1 литр</td>
-                  <td class="cards__cell-2">100 Р.</td>
-                </tr>
-              </table>
-              <a class="cards-button button" href="#">заказать</a>
+              <div class="cards__item-wrapper">
+                <h3 class="cards__description">молоко</h3>
+                <table class="cards__table">
+                  <tr>
+                    <td class="cards__cell-1">1 литр</td>
+                    <td class="cards__cell-2">100 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="cards__button button" href="#">заказать</a>
             </li>
             <li class="cards__item">
-              <h3 class="cards__description">витамины</h3>
-              <table class="cards__table">
-                <tr>
-                  <td class="cards__cell-1">1 упаковка (30 г)</td>
-                  <td class="cards__cell-2">300 Р.</td>
-                </tr>
-              </table>
-              <a class="cards-button button" href="#">заказать</a>
+              <div class="cards__item-wrapper">
+                <h3 class="cards__description">витамины</h3>
+                <table class="cards__table">
+                  <tr>
+                    <td class="cards__cell-1">1 упаковка (30 г)</td>
+                    <td class="cards__cell-2">300 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="cards__button button" href="#">заказать</a>
             </li>
           </ul>
-        </div>
-        <div class="extra__other">
-          <!--<img src="img/basket.svg" width="57" height="61" alt="">-->
-          <p>Закажите все и получите чехол для кота в подарок!</p>
+          <div class="extra__other">
+            <!--<img src="img/basket.svg" width="57" height="61" alt="">-->
+            <p>Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="address">
+      <section class="page-footer__address address">
         <div class="address__contacts contacts">
           <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
