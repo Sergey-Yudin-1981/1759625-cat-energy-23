@@ -1,0 +1,61 @@
+.extra {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.extra__heading {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.cards {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cards__description {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.cards__table {
+  width: 280px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.cards__cell-2 {
+  text-align: right;
+}
+
+.cards__button {
+  padding: 10px 113px;
+}
+
+.extra__other {
+  background-image: url("../img/cat-mini.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+}
+
+.extra__other p {
+  width: 161px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding-left: 59px;
+  padding-top: 187px;
+}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Oswald"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Oswald"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  /*color: var(--basic-white);
+  background-color: var(--basic-green);
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100%; /*займи все пространство*/
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}

@@ -1,0 +1,39 @@
+.goals {
+  width: 280px;
+  margin: 20px;
+}
+
+.goals__heading {
+  text-align: center;
+}
+
+.goals__list {
+  padding: 0;
+  list-style: none;
+}
+
+.goals__item {
+  padding-left: 19px;
+  padding-right: 19px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.goals__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  padding-left: 1px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.goals__button {
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  line-height: 16px;
+}

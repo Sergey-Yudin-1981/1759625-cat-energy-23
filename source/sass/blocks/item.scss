@@ -1,0 +1,64 @@
+.item {
+  /*display: flex;*/
+  padding: 8px 20px 20px;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
+  border-bottom: 1px solid #ebebeb;
+}
+
+.item__double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.item__heading {
+  width: 80px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase; /*все заглавные*/
+}
+
+.item__table {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  width: 142px;
+}
+
+.item__cell-2 {
+  text-align: right;
+}
+
+.item__button {
+  padding: 10px 109px;
+  margin-bottom: 25px;
+}
+
+.item__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.item__grey {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px 94px;
+  text-decoration: none; /*убираем подчеркивание у ссылок*/
+  color: #444444;
+  text-transform: uppercase;
+}
