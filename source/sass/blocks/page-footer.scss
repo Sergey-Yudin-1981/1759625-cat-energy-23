@@ -1,13 +1,27 @@
-.page-footer__academy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 20px;
+.page-footer__address {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
-.page-footer__icon {
-  width: 280px;
-  padding-top: 39px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #d9d9d9;
+.page-footer__links {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 708px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    /*display: flex;*/
+    width: 1220px;
+    height: 149px;
+    /*margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;*/
+  }
 }

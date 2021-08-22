@@ -1,16 +1,46 @@
 .food {
+  position: relative;
   width: 320px;
   background-image: url("../img/cat-green.jpg");
   background-repeat: no-repeat;
-}
 
-.food__heading {
-  color: #ffffff;
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    width: 664px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cat-green-max.jpg");
+    background-repeat: no-repeat;
+    /*position: absolute;
+    right: 0;
+    top: -50px;*/
+    width: 1220px;
+    height: 535px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .food__button {
   padding: 7px 72px;
   margin-top: 56px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    margin-top: 56px;
+    margin-bottom: 526px;
+    display: block;
+    width: 244px;
+    /*height: 54px;*/
+    margin-left: 91px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .food__description {
@@ -18,11 +48,33 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 310px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 87px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
 }
 
 .food__cup {
   display: block;
   position: absolute;
-  top: 283px;
+  top: 144px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    z-index: -1;
+    top: 225px;
+    left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 97px;
+    left: 680px;
+    width: 552px;
+    height: 499px;
+  }
 }

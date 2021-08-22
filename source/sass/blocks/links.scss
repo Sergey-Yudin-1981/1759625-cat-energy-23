@@ -1,0 +1,52 @@
+.links__icon {
+  width: 280px;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 128px;
+    border-bottom: none;
+  }
+
+  /*@media (min-width: $desktop-width) {
+    width: 128px;
+  }*/
+}
+
+.links__social {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 129px;
+    border-bottom: none;
+  }
+
+  /*@media (min-width: $desktop-width) {
+    width: 129px;
+  }*/
+}
+
+
+.links__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: 163px;
+    justify-content: flex-end;
+  }
+}
+
+.links__academy img {
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+}

@@ -1,0 +1,39 @@
+.page-header {
+  width: 280px;
+  height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 664px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 162px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page-header__logo {
+  float: left;
+  /*margin-left: 20px;
+
+  /*@media (min-width: $desktop-width) {
+    src: url("../img/logo-tablet.svg");
+  }*/
+}
+
+.page-header__toggle {
+  /*float: right;*/
+  margin-right: 20px;
+}

@@ -1,10 +1,13 @@
 // Начните писать стили здесь
 /*@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");*/
+@import "variables.scss"; /*переменные*/
 @import "base.scss";
 @import "blocks/title.scss"; /*не основные тэги*/
+@import "blocks/page-header.scss";
 @import "blocks/site-list.scss"; /*header*/
+@import "blocks/page-main.scss";
 @import "blocks/food.scss"; /*index-main*/
-@import "blocks/goels.scss"; /*index-main*/
+@import "blocks/goals.scss"; /*index-main*/
 @import "blocks/advantages.scss"; /*index-main*/
 @import "blocks/example.scss"; /*index-main*/
 @import "blocks/catalog.scss"; /*catalog-main*/
@@ -16,3 +19,4 @@
 @import "blocks/social.scss"; /*footer-main*/
 @import "blocks/address.scss"; /*footer-main*/
 @import "blocks/contacts.scss"; /*footer-main*/
+@import "blocks/links.scss"; /*footer-main*/

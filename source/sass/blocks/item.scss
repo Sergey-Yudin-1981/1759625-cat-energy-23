@@ -1,9 +1,14 @@
 .item {
   /*display: flex;*/
-  padding: 8px 20px 20px;
+  padding-bottom: 20px;
   /*padding-left: 20px;
   padding-right: 20px;*/
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
 }
 
 .item__double {
@@ -11,6 +16,33 @@
   grid-template-columns: 1fr 1fr;
   align-items: flex-end;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    /*height: 511px;*/
+    grid-template-columns: 1fr;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.item__description {
+  /*font-family: "Arial", sans-serif;*/
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .item__heading {
@@ -19,6 +51,18 @@
   line-height: 20px;
   text-align: left;
   text-transform: uppercase; /*все заглавные*/
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 158px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .item__table {
@@ -27,15 +71,48 @@
   line-height: 16px;
   text-align: left;
   width: 142px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    border-spacing: 0;
+    /*border-bottom: 1px solid #cdcdcd;*/
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin: auto;
+  }
+}
+
+.item__cell-1 {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+  }
 }
 
 .item__cell-2 {
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 16px;
+  }
 }
 
 .item__button {
   padding: 10px 109px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+  }
 }
 
 .item__title {
@@ -43,13 +120,6 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.item__description {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
 }
 
 .item__grey {

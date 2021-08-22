@@ -1,9 +1,26 @@
 .site-list {
+  padding: 0;
   list-style: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   display: flex;
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-left: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    margin-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .site-list__item a {

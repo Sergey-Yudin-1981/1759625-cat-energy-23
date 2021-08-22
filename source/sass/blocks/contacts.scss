@@ -5,10 +5,33 @@
   text-transform: uppercase; /*все заглавные*/
   width: 139px;
   margin-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 209px;
+    margin-top: 66px;
+  }
 }
 
 .contacts__description {
   font-family: "Arial", sans-serif;
   width: 140px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    width: 159px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 209px;
+    margin-top: 66px;
+  }
 }
