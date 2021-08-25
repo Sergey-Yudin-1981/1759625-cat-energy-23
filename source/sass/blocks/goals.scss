@@ -1,20 +1,24 @@
 .goals {
-  /*width: 280px;*/
+  /*width: 280px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px;*/
+  margin-top: 22px;
+  margin-bottom: 27px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 45px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding-left: 110px;
-    padding-right: 110px;
+    margin-bottom: 71px;
+    /*padding-left: 110px;
+    padding-right: 110px;*/
   }
 }
 
@@ -41,6 +45,7 @@
 .goals__list {
   padding: 0;
   list-style: none;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -55,8 +60,9 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding-left: 52px;
-    padding-right: 52px;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,6 +83,7 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+    padding-bottom: 48px;
   }
 }
 
@@ -92,5 +99,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 0;
+    padding-bottom: 53px;
   }
 }

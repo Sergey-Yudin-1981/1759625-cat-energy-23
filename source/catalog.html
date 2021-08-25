@@ -19,25 +19,27 @@
       </button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__catalog" href="">Главная</a>
+          </li>
           <li class="site-list__item site-list__item--active">
-            <a href="">Главная</a>
+            <a class="site-list__catalog" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__catalog" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main container">
       <section class="catalog">
-        <h1 class="catalog__heading">Каталог продукции</h1>
+        <h1 class="catalog__heading catalog__heading--black">Каталог продукции</h1>
         <div class="catalog__list">
           <div class="catalog__item item"> <!--курица 500г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-chicken.png" width="68" height="86" alt=""></a>
+              <a class="item__link-min" href="#">
+                <img class="item__img-small" src="img/cat-energy-chicken.png" width="68" height="86" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 500 г</h2>
                 <table class="item__table">
@@ -60,7 +62,9 @@
           </div>
           <div class="catalog__item item"> <!--курица 1000г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-chicken.png" width="84" height="101" alt=""></a>
+              <a class="item__link-max" href="#">
+                <img class="item__img-big" src="img/cat-energy-chicken.png" width="84" height="101" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 1000 г</h2>
                 <table class="item__table">
@@ -83,7 +87,9 @@
           </div>
           <div class="catalog__item item"> <!--рыба 500г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-fish.png" width="68" height="86" alt=""></a>
+              <a class="item__link-min" href="#">
+                <img class="item__img-small" src="img/cat-energy-fish.png" width="68" height="86" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 500 г</h2>
                 <table class="item__table">
@@ -106,7 +112,9 @@
           </div>
           <div class="catalog__item item"> <!--рыба 1000г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-fish.png" width="84" height="101" alt=""></a>
+              <a class="item__link-max" href="#">
+                <img class="item__img-big" src="img/cat-energy-fish.png" width="84" height="101" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 1000 г</h2>
                 <table class="item__table">
@@ -129,7 +137,9 @@
           </div>
           <div class="catalog__item item"> <!--гречка 500г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-buckwheat.png" width="68" height="86" alt=""></a>
+              <a class="item__link-min" href="#">
+                <img class="item__img-small" src="img/cat-energy-buckwheat.png" width="68" height="86" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 500 г</h2>
                 <table class="item__table">
@@ -152,7 +162,9 @@
           </div>
           <div class="catalog__item item"> <!--гречка 1000г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-fish.png" width="84" height="101" alt=""></a>
+              <a class="item__link-max" href="#">
+                <img class="item__img-big" src="img/cat-energy-fish.png" width="84" height="101" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 1000 г</h2>
                 <table class="item__table">
@@ -175,7 +187,9 @@
           </div>
           <div class="catalog__item item"> <!--рис 500г-->
             <div class="item__double">
-              <a href="#"><img src="img/cat-energy-buckwheat.png" width="68" height="86" alt=""></a>
+              <a class="item__link-min" href="#">
+                <img class="item__img-small" src="img/cat-energy-buckwheat.png" width="68" height="86" alt="">
+              </a>
               <div class="item__description">
                 <h2 class="item__heading">Cat Energy PRO 500 г</h2>
                 <table class="item__table">
@@ -197,9 +211,11 @@
             <a class="item__button button" href="#">заказать</a>
           </div>
           <div class="catalog__item item">
-            <p class="item__title">Показать еще 100500 товаров</p>
-            <p class="item__description">На самом деле вкусов гораздо больше!</p>
-            <a class="item__grey" href="#">показать все</a>
+            <div class="item__double-grey">
+              <p class="item__title">Показать еще 100500 товаров</p>
+              <p class="item__description-grey">На самом деле вкусов гораздо больше!</p>
+              <a class="item__grey" href="#">показать все</a>
+            </div>
           </div>
         </div>
       </section>

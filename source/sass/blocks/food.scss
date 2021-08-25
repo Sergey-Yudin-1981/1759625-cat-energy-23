@@ -1,18 +1,19 @@
 .food {
   position: relative;
-  width: 320px;
-  background-image: url("../img/cat-green.jpg");
+  /*width: 320px;*/
+  /*background-image: url("../img/cat-green.jpg");
   background-repeat: no-repeat;
+  background-size: cover;*/
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    width: 664px;
+    /*width: 664px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 30px;*/
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/cat-green-max.jpg");
+    /*background-image: url("../img/cat-green-max.jpg");
     background-repeat: no-repeat;
     /*position: absolute;
     right: 0;
@@ -24,9 +25,40 @@
   }
 }
 
+.food::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 62%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #68b738;
+  opacity: 85%;
+  background-image: url("../img/cat-green.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.food__heading {
+  color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+}
+
 .food__button {
   padding: 7px 72px;
-  margin-top: 56px;
+  /*margin-top: 56px;*/
   font-size: 14px;
   line-height: 18px;
 
@@ -47,7 +79,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 310px;
+  margin-bottom: 302px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -57,24 +90,27 @@
     line-height: 20px;
     margin-bottom: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .food__cup {
   display: block;
   position: absolute;
-  top: 144px;
-  left: 20px;
+  top: 167px;
 
   @media (min-width: $tablet-width) {
     z-index: -1;
     top: 225px;
-    left: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 97px;
-    left: 680px;
+    top: -63px;
+    left: 560px;
     width: 552px;
     height: 499px;
+    z-index: 2;
   }
 }

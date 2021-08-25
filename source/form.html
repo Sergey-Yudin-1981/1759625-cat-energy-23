@@ -5,7 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body page-body--index">
+  <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo" href="">
         <picture>
@@ -20,98 +20,99 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__index" href="">Главная</a>
+            <a href="">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__index" href="catalog.html">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__index" href="form.html">Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="food">
-        <div class="food__wrapper container">
-          <h1 class="food__heading">Функциональное питание для котов</h1>
-          <p class="food__description title">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png" width="552" height="499" alt="Питание с курицей">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png" width="709" height="609" alt="Питание с курицей">
-            <img class="food__cup" src="img/index-can-mobile.png" width="280" height="270" alt="Питание с курицей">
-          </picture>
-          <a class="food__button button" href="form.html">Подобрать программу</a>
-        </div>
-
-      </section>
-      <section class="goals container"> <!--Цели питания-->
-        <!--<div class="goals__wrapper">-->
-          <h2 class="visually-hidden">Цели питания</h2>
-          <ul class="goals__list">
-            <li class="goals__item goals__item--thin">
-              <h3 class="goals__heading title">Похудение</h3>
-              <p class="goals__description title">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="goals__button" href="#">Каталог Slim</a>
-            </li>
-            <li class="goals__item goals__item--thick">
-              <h3 class="goals__heading title">Набор массы</h3>
-              <p class="goals__description title">Зарабатывать авторитет среди<br>дворовых котов и даже собак?<br>Серия Cat Energy Pro поможет<br>вашему коту нарастить<br>необходимые мышцы!</p>
-              <a class="goals__button" href="#">Каталог Pro</a>
-            </li>
-          </ul>
-        <!--</div>-->
-      </section>
-      <section class="advantages"> <!--Как это работает-->
-        <!--<div class="advantages__wrapper">-->
-          <h2  class="advantages__heading title">Как это работает</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--compound">
-              <p class="advantages__description title">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="advantages__item advantages__item--powder">
-              <p class="advantages__description title">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="advantages__item advantages__item--food">
-              <p class="advantages__description title">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="advantages__item advantages__item--time">
-              <p class="advantages__description title">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ul>
-        <!--</div>-->
-      </section>
-      <section class="example"> <!--Живой пример-->
-        <div class="container">
-          <h2 class="example__heading title">Живой пример</h2>
-          <p class="example__description title">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__container">
-            <div class="example__purpose">
-              <div class="example__min">
-                <p class="example__min-title title">снижение веса</p>
-                <p class="example__min-weight title">5 <span>кг</span></p>
-              </div>
-              <div class="example__max">
-                <p class="example__max-title title">затрачано времени</p>
-                <p class="example__max-weight title">60 <span>дней</span></p>
-              </div>
-            </div>
-            <div class="example__cash">
-              <p class="example__cash-description title">Затраты на питание:</p>
-              <p class="example__cash-description title">15 000 РУБ.</p>
-            </div>
+      <section class="data">
+        <h1 class="data__heading">Подбор программы</h1>
+        <p class="data__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class=""> <!--флекс бокса-->
+          <div class=""> <!--данные формы-->
+            <form class="" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="name">Имя:*</label>
+                <input id="name" type="text" name="name" value="" placeholder="барсик">
+              </p>
+              <p>
+                <label for="weight">Вес (кг):*</label>
+                <input id="weight" type="text" name="name" value="" placeholder="7">
+              </p>
+              <p>
+                <label for="age">Возраст (лет):*</label>
+                <input id="age" type="text" name="name" value="" placeholder="7">
+              </p>
+            </form>
           </div>
+          <fieldset> <!--данные формы-->
+            <ul>
+              <li>
+                <input id="radio-1" type="radio" name="question-one" value="похудение">
+                <label for="radio-1">похудение</label>
+              </li>
+              <li>
+                <input id="radio-2" type="radio" name="question-one" value="набор массы" checked>
+                <label for="radio-2">набор массы</label>
+              </li>
+              <li>
+                <input id="radio-3" type="radio" name="question-one" value="не знаю">
+                <label for="radio-3">не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-        <div class="example__pic">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/image-cat-desktop.png" width="690" height="656" alt="Крупная кошка">
-            <source media="(min-width: 768px)" srcset="img/image-cat-desktop.png" width="708" height="620" alt="Крупная кошка">
-            <img class="example__cat" src="img/cat-max.png" width="311" height="232" alt="Крупная кошка">
-          </picture>
-          <div class="example__slider">
-            <button class="example__slider-button" type="button" name="button">Было</button>
-            <button class="example__slider-button" type="button" name="button">Стало</button>
-          </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__heading">Контактные данные</h2>
+        <form class="" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contacts__description">
+            <label for="email">e-mail:*</label>
+            <input id="email" type="email" name="name" value="" placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="contacts__description">
+            <label for="tel">Телефон:*</label>
+            <input id="tel" type="text" name="name" value="" placeholder="8 (960) 900-60-90">
+          </p>
+        </form>
+      </section>
+      <section class="comments">
+        <h2 class="comments__heading">Комментарий</h2>
+        <form class="" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="comment">комментарий</label>
+          <textarea id="comment" name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
+        </form>
+      </section>
+      <section class="other">
+        <h2  class="other__heading">Дополнительно</h2>
+        <ul class="other__list">
+          <li class="other__item">
+            <input type="checkbox" checked name="sugar" id="sugar">
+            <label for="sugar">сахарозаменитель</label>
+          </li>
+          <li class="other__item">
+            <input type="checkbox" name="water" id="water">
+            <label for="water">питьевая вода</label>
+          </li>
+          <li class="other__item">
+            <input type="checkbox" name="milk" id="milk">
+            <label for="water">молоко</label>
+          </li>
+          <li class="other__item">
+            <input type="checkbox" name="vitamins" id="vitamins">
+            <label for="vitamins">витамины</label>
+          </li>
+        </ul>
+        <div>
+          <a class="other__button button" href="#">отправить заявку</a>
+          <p>* — Обязательные поля</p>
         </div>
       </section>
     </main>
