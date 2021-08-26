@@ -1,0 +1,55 @@
+.links {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 149px;
+  }
+}
+
+.links__icon {
+  width: 280px;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 128px;
+    border-bottom: none;
+  }
+}
+
+.links__social {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+
+.links__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+  }
+}
+
+.links__academy img {
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+}

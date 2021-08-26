@@ -1,0 +1,17 @@
+.page-body--index::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 694px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #68b738;
+    opacity: 85%;
+    background-image: url("../img/cat-green-max.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}

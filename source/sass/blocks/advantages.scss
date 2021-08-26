@@ -1,10 +1,25 @@
 .advantages {
-  width: 280px;
-  margin-left: 20px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 126px;
+  }
 }
 
 .advantages__heading {
   text-align: left;
+  margin: 0;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 72px;
+  }
 }
 
 .advantages__list {
@@ -12,4 +27,61 @@
   font-size: 14px;
   line-height: 18px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.advantages__item {
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 153px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 94px;
+  }
+}
+
+.advantages__description {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages__item--compound {
+  background-image: url("../img/sheet.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.advantages__item--powder {
+  background-image: url("../img/water.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.advantages__item--food {
+  background-image: url("../img/fork.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.advantages__item--time {
+  background-image: url("../img/watch.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
 }

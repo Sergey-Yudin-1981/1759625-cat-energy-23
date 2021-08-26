@@ -1,28 +1,104 @@
 .food {
-  width: 320px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 535px;
+  }
+}
+
+.food::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 62%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #68b738;
+  opacity: 85%;
   background-image: url("../img/cat-green.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .food__heading {
   color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .food__button {
   padding: 7px 72px;
-  margin-top: 56px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    margin-top: 56px;
+    margin-bottom: 526px;
+    display: block;
+    width: 244px;
+    margin-left: 91px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .food__description {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 310px;
+  margin-bottom: 302px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 87px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    width: 500px;
+  }
 }
 
 .food__cup {
   display: block;
   position: absolute;
-  top: 283px;
-  left: 20px;
+  top: 167px;
+
+  @media (min-width: $tablet-width) {
+    z-index: -1;
+    top: 225px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -63px;
+    left: 560px;
+    width: 552px;
+    height: 499px;
+    z-index: 2;
+  }
 }

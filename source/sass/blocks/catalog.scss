@@ -1,7 +1,24 @@
 .catalog__heading {
   text-align: left;
   margin: 0;
-  padding-left: 20px;
+  color: #000000;
   padding-bottom: 41px;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    border-bottom: none;
+    padding-bottom: 82px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
