@@ -20,6 +20,12 @@
   }
 }
 
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 500px;
+  }
+}
+
 .example__heading {
   margin: 0;
   text-align: left;

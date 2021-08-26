@@ -18,12 +18,10 @@
 .goals__heading {
   text-align: center;
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-top: 77px;
     padding-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -47,14 +45,12 @@
 }
 
 .goals__item {
-  padding-left: 19px;
-  padding-right: 19px;
+  padding: 30px 19px 22px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding-left: 53px;
-    padding-right: 53px;
+    padding: 77px 53px 53px;
     margin-bottom: 30px;
   }
 
@@ -83,7 +79,6 @@
 .goals__button {
   display: block;
   padding-top: 19px;
-  padding-bottom: 22px;
   text-align: left;
   text-decoration: none;
   color: #000000;
@@ -93,6 +88,5 @@
     font-size: 20px;
     line-height: 30px;
     padding-top: 0;
-    padding-bottom: 53px;
   }
 }
