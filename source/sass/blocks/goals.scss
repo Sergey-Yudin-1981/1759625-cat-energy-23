@@ -1,7 +1,4 @@
 .goals {
-  /*width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;*/
   margin-top: 22px;
   margin-bottom: 27px;
   margin-left: auto;
@@ -10,15 +7,11 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin-bottom: 45px;
-    /*padding-left: 30px;
-    padding-right: 30px;*/
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin-bottom: 71px;
-    /*padding-left: 110px;
-    padding-right: 110px;*/
   }
 }
 

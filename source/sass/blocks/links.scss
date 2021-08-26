@@ -1,3 +1,16 @@
+.links {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 149px;
+  }
+}
+
 .links__icon {
   width: 280px;
   padding-top: 39px;
@@ -9,22 +22,13 @@
     width: 128px;
     border-bottom: none;
   }
-
-  /*@media (min-width: $desktop-width) {
-    width: 128px;
-  }*/
 }
 
 .links__social {
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 129px;
     border-bottom: none;
   }
-
-  /*@media (min-width: $desktop-width) {
-    width: 129px;
-  }*/
 }
 
 
@@ -32,15 +36,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
-    width: 163px;
     justify-content: flex-end;
   }
 }

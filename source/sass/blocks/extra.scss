@@ -1,17 +1,13 @@
 .extra {
-  /*width: 280px;*/
-  /*padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    /*padding-left: 30px;
-    padding-right: 30px;*/
-  /*}
+    padding-bottom: 76px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-  }*/
+    padding-bottom: 86px;
+  }
 }
 
 .extra__heading {
@@ -26,13 +22,8 @@
 }
 
 .extra__goods {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 86px;
   }
 }
