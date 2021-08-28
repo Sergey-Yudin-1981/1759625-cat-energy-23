@@ -1,0 +1,64 @@
+.connection {
+  border: none;
+  padding: 0;
+  padding-bottom: 24px;
+}
+
+.connection__heading {
+  text-align: left;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 76px;
+  }
+}
+
+.connection__mail-tel {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+}
+
+.connection__description {
+  display: flex;
+  align-items: center;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
+.connection__label-mail {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 11px;
+  width: 66px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 74px;
+  }
+}
+
+.connection__label-tel {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 11px;
+  width: 66px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 84px;
+  }
+}

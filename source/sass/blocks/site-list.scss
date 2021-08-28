@@ -12,6 +12,8 @@
 }
 
 .site-list__item {
+  text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     margin-left: 33px;

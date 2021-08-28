@@ -1,0 +1,48 @@
+.other {
+  border: none;
+  padding: 0;
+  padding-bottom: 34px;
+}
+
+.other__heading {
+  text-align: left;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+}
+
+.other__list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.other__item {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+}
