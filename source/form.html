@@ -11,8 +11,8 @@
     <header class="page-header container">
       <a class="page-header__logo" href="">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59" alt="cat energy">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52" alt="cat energy">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" alt="cat energy">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" alt="cat energy">
           <img class="page-header__logo-image" src="img/logo-mini.svg" width="191" height="38" alt="cat energy">
         </picture>
       </a>
@@ -27,7 +27,7 @@
           <li class="site-list__item">
             <a class="site-list__catalog" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__catalog--active">
             <a class="site-list__catalog" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -60,15 +60,15 @@
                 <fieldset class="data__radio"> <!--данные формы-->
                   <ul class="data__list">
                     <li class="data__item">
-                      <input id="radio-1" type="radio" name="question-one" value="похудение">
+                      <input class="visually-hidden data__item-radio" id="radio-1" type="radio" name="question-one" value="похудение">
                       <label for="radio-1">похудение</label>
                     </li>
                     <li class="data__item">
-                      <input id="radio-2" type="radio" name="question-one" value="набор массы" checked>
+                      <input  class="visually-hidden data__item-radio" id="radio-2" type="radio" name="question-one" value="набор массы" checked>
                       <label for="radio-2">набор массы</label>
                     </li>
                     <li class="data__item">
-                      <input id="radio-3" type="radio" name="question-one" value="не знаю">
+                      <input class="visually-hidden data__item-radio" id="radio-3" type="radio" name="question-one" value="не знаю">
                       <label for="radio-3">не знаю (нужен ваш совет)</label>
                     </li>
                   </ul>
@@ -97,19 +97,19 @@
               <h2  class="other__heading">Дополнительно</h2>
               <ul class="other__list">
                 <li class="other__item">
-                  <input type="checkbox" checked name="sugar" id="sugar">
+                  <input class="visually-hidden other__input" type="checkbox" checked name="sugar" id="sugar">
                   <label for="sugar">сахарозаменитель</label>
                 </li>
                 <li class="other__item">
-                  <input type="checkbox" name="water" id="water">
+                  <input class="visually-hidden other__input" type="checkbox" name="water" id="water">
                   <label for="water">питьевая вода</label>
                 </li>
                 <li class="other__item">
-                  <input type="checkbox" name="milk" id="milk">
-                  <label for="water">молоко</label>
+                  <input class="visually-hidden other__input" type="checkbox" name="milk" id="milk">
+                  <label for="milk">молоко</label>
                 </li>
                 <li class="other__item">
-                  <input type="checkbox" name="vitamins" id="vitamins">
+                  <input class="visually-hidden other__input" type="checkbox" name="vitamins" id="vitamins">
                   <label for="vitamins">витамины</label>
                 </li>
               </ul>

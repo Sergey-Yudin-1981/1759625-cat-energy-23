@@ -249,3 +249,18 @@
     right: 0;
   }
 }
+
+.example__pic img {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 656px;
+  }
+}

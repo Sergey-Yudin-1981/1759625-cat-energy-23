@@ -39,10 +39,55 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  padding-left: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 32px;
+    padding-left: 53px;
+  }
+}
+
+.other__item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.other__input + label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -38px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/form/cube.svg");
+  background-size: 30px 30px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: -4px;
+    left: -55px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
+}
+
+.other__input + label:hover::before {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/form/cube-hover.svg");
+  }
+}
+
+.other__input:checked + label::before {
+  background-image: url("../img/form/cube-on.svg");
+  background-size: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 40px 40px;
   }
 }
