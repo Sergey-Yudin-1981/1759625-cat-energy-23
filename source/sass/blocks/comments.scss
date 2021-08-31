@@ -1,0 +1,38 @@
+.comments {
+  padding: 0;
+  padding-bottom: 24px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
+}
+
+.comments__heading {
+  text-align: left;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+}
+
+.comments__textarea {
+  height: 150px;
+  resize: none;
+  padding: 10px 11px;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 10px 19px;
+  }
+}
