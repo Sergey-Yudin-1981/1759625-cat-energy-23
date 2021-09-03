@@ -30,8 +30,13 @@
   }
 }
 
+/*.food__wrapper {
+  position: relative;
+}*/
+
 .food__heading {
   color: #ffffff;
+  margin: 0;
   padding-top: 27px;
   padding-bottom: 25px;
   margin-bottom: 0;
@@ -42,23 +47,27 @@
 }
 
 .food__button {
+  /*position: absolute;*/
   padding: 7px 72px;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
-    margin-top: 56px;
+    margin-top: 60px;
     margin-bottom: 526px;
     display: block;
     width: 244px;
-    margin-left: 91px;
+    margin-left: 82px;
+    /*top: 250px;*/
     font-size: 20px;
     line-height: 20px;
+    /*left: 87px;*/
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    /*left: 80px;*/
   }
 }
 
@@ -75,12 +84,14 @@
     color: #000000;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 49px;
+    /*margin-bottom: 662px;*/
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     width: 500px;
+    margin-bottom: 49px;
   }
 }
 

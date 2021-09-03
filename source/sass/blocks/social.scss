@@ -12,3 +12,16 @@
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
 }
+
+.social__item {
+  cursor: pointer;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+    /*fill: rgba(104, 183, 56, 0.3);*/
+  }
+}

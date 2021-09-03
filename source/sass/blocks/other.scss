@@ -2,6 +2,24 @@
   border: none;
   padding: 0;
   padding-bottom: 34px;
+  position: relative;
+}
+
+.other::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40%;
+  top: 15px;
+  right: 0;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    top: 20px;
+  }
 }
 
 .other__heading {
@@ -10,6 +28,7 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 34px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -83,11 +102,21 @@
   }
 }
 
+.other__input:disabled + label::before {
+  opacity: 0.3;
+}
+
 .other__input:checked + label::before {
   background-image: url("../img/form/cube-on.svg");
   background-size: 30px 30px;
 
   @media (min-width: $tablet-width) {
     background-size: 40px 40px;
+  }
+}
+
+.other__input:checked + label:hover::before {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/form/cube-on-hover.svg");
   }
 }

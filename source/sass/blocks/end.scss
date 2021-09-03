@@ -9,6 +9,7 @@
 
 .end__button {
   padding: 7px 44px;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     padding: 13px 45px;

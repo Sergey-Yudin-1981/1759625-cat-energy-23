@@ -107,6 +107,7 @@
 
 .cards__button {
   padding: 10px 109px;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     padding: 7px 284px;
