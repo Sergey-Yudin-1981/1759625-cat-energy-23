@@ -236,6 +236,14 @@
   }
 }
 
+.data__item-radio + label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.data__item-radio:disabled + label::before {
+  opacity: 0.3;
+}
+
 .data__item-radio:checked + label::after {
   content: "";
   position: absolute;

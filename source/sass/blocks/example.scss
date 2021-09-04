@@ -30,35 +30,35 @@
   margin: 0;
   text-align: left;
   padding-top: 27px;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 63px;
+    margin-bottom: 63px;
     padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 58px;
-    padding-bottom: 146px;
+    margin-bottom: 146px;
   }
 }
 
 .example__description {
   margin: 0;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 54px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     width: 440px;
-    padding-bottom: 69px;
+    margin-bottom: 69px;
   }
 }
 

@@ -14,6 +14,10 @@
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 76px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -40,7 +44,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 11px;
-  width: 66px;
+  width: 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

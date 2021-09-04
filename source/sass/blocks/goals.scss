@@ -16,18 +16,20 @@
 .goals__heading {
   text-align: center;
   margin: 0;
-  padding-bottom: 29px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
     text-align: left;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     text-align: center;
-    padding-bottom: 73px;
+    margin-bottom: 73px;
   }
 }
 
@@ -39,6 +41,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -53,8 +56,48 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 466px;
-    margin-right: 80px;
+    /*width: 466px;
+    margin-right: 80px;*/
+  }
+}
+
+.goals__item--thin {
+  background-image: url("../img/index/thin.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position-x: 10%;
+  background-position-y: 10%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+    background-position-x: 90%;
+    background-position-y: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 108px;
+    background-position-x: 10%;
+    background-position-y: 10%;
+  }
+}
+
+.goals__item--thick {
+  background-image: url("../img/index/thick.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position-x: 10%;
+  background-position-y: 10%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+    background-position-x: 90%;
+    background-position-y: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    background-position-x: 10%;
+    background-position-y: 10%;
   }
 }
 
@@ -67,10 +110,15 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -81,10 +129,35 @@
   text-decoration: none;
   color: #000000;
   line-height: 16px;
+  background-image: url("../img/index/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  background-position-x: 90px;
+  background-position-y: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("../img/index/arrow32.svg");
+    background-size: 32px 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-top: 0;
+    background-position-x: 110px;
+    background-position-y: 10px;
   }
 }
+
+/*.goals__button--arrow {
+  background-image: url("../img/index/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  background-position-x: 10%;
+  background-position-y: 10%;
+}*/

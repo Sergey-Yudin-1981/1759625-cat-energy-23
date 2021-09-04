@@ -30,16 +30,14 @@
   }
 }
 
-/*.food__wrapper {
-  position: relative;
-}*/
+.food__wrapper {
+  padding-top: 27px;
+}
 
 .food__heading {
   color: #ffffff;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 25px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -96,11 +94,11 @@
 }
 
 .food__cup {
-  display: block;
   position: absolute;
   top: 167px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     z-index: -1;
     top: 225px;
   }
