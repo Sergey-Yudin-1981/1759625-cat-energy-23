@@ -223,10 +223,25 @@
 
 .example__cat {
   margin-bottom: 23px;
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+  }
 }
 
 .example__slider-button {
-  margin-right: 5px;
+  border: none;
+  background-color: transparent;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .example__slider {
@@ -237,9 +252,15 @@
 
 .example__pic {
   padding-bottom: 25px;
+  position: relative;
+  height: 232px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 33px;
+    /*test*/
+    margin-top: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -250,17 +271,27 @@
   }
 }
 
-.example__pic img {
-  width: 311px;
-  height: 232px;
+.example__pic-wrap {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 620px;
+    top: -400px;
+    background-color: revert;
+    left: -74%;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    width: 690px;
-    height: 656px;
+.example__pic-wrap--after {
+  overflow: hidden;
+}
+
+.toggle-controls__scale {
+  @media (min-width: $tablet-width) {
+    width: 428px;
   }
 }

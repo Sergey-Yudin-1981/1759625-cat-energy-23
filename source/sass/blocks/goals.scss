@@ -17,8 +17,10 @@
   text-align: center;
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     width: 50%;
     text-align: left;
     margin-bottom: 24px;
@@ -27,9 +29,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 77%;
     text-align: center;
     margin-bottom: 73px;
+    margin-left: 134px;
   }
 }
 

@@ -1,4 +1,8 @@
 .links {
+  path {
+    transition: fill 0.35s, stroke 0.35s;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     height: 150px;
@@ -12,7 +16,7 @@
 }
 
 .links__icon {
-  width: 280px;
+  width: 100%;
   padding-top: 39px;
   padding-bottom: 32px;
   border-bottom: 1px solid #d9d9d9;
@@ -43,6 +47,8 @@
 
 
 .links__academy {
+  text-decoration: none;
+  color: #444444;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,10 +63,16 @@
     margin: 0;
     justify-content: flex-end;
   }
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.links__academy img {
-  @media (min-width: $tablet-width) {
-    margin-left: 23px;
-  }
+.links__academy svg {
+  margin-left: 23px;
 }

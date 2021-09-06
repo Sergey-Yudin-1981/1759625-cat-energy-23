@@ -1,14 +1,11 @@
 .page-header {
-  /*test*/
-  height: 65px;
   position: relative;
-  /*--test*/
 
   @media (min-width: $tablet-width) {
     width: 92%;
     margin-left: auto;
     margin-right: auto;
-    height: 75px;
+    padding: 24px 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -16,17 +13,27 @@
 
   @media (min-width: $desktop-width) {
     width: 84%;
-    height: 109px;
+    max-width: 1450px;
+    padding: 53px 0;
     margin-bottom: 90px;
   }
 }
 
 .page-header__wrapper {
+  padding-top: 10px;
+  padding-bottom: 17px;
+
   @media (max-width: $mobile-width-only) {
     width: 87%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: contents;
   }
 }
 
@@ -59,11 +66,10 @@
 
 
 .page-header__toggle {
-  margin-right: 20px;
-  /*test*/
+  padding: 0;
   position: absolute;
-  top: 7px;
-  right: -19px;
+  top: 17px;
+  right: 0;
   z-index: 2;
   display: block;
   width: 36px;
@@ -71,7 +77,6 @@
   background-color: #ffffff;
   cursor: pointer;
   border: none;
-  /*test*/
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -96,10 +101,6 @@
 }
 
 .page-header--opened .page-header__toggle {
-  /*top: 0;
-  right: auto;
-  left: 0;*/
-
   &::before,
   &::after {
     content: "";
@@ -119,9 +120,4 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-  /*&:active::before,
-  &:active::after {
-    background-color: fade(#000000, 30%);
-  }*/
 }

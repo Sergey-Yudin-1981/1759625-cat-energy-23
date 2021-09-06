@@ -96,6 +96,8 @@
 .food__cup {
   position: absolute;
   top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -105,9 +107,9 @@
 
   @media (min-width: $desktop-width) {
     top: -63px;
-    left: 560px;
     width: 552px;
     height: 499px;
     z-index: 2;
+    transform: translateX(-30%);
   }
 }
