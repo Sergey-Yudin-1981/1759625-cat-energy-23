@@ -9,8 +9,7 @@ range.addEventListener('input', function (evt) {
   afterWrap.style.width = `${value}%`;
 
   if (window.innerWidth >= 1440) {
-  	example.style.backgroundImage = `linear-gradient(to right, #F2F2F2 ${100 - 0.5*value}%, #EAEAEA ${0.5*value}%)`;
-  	// конечная точка градиента = 50%, поэтому находим значение на единицу 0.5 и считаем от value
+    example.style.backgroundImage = `linear-gradient(to right, #F2F2F2 ${100 - 0.5*value}%, #EAEAEA ${0.5*value}%)`;
   }
 
 });
