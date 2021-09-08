@@ -2,6 +2,7 @@
   padding: 0;
   padding-bottom: 24px;
   border: none;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
@@ -18,11 +19,32 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 38px;
+  position: relative;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0 6px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background: #68b738;
+    width: 10000px;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    &::after {
+      top: 22px;
+      left: -2466px;
+    }
   }
 }
 

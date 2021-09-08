@@ -4,18 +4,18 @@
 
 .address img {
   width: 100%;
+  display: block;
 }
 
 .address__contacts {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     /*width: 625px;*/
     margin-left: auto;
     margin-right: auto;
-    padding-left: 71px;
-    padding-right: 72px;
+    padding: 0 42px;
     justify-content: space-between;
   }
 

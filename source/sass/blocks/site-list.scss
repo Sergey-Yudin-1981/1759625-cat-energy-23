@@ -4,17 +4,45 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 129px;
+  top: 54px;
+  left: 0;
+  z-index: 3;
+  background-color: #ffffff;
   display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
+    /*test*/
+    height: 38px;
+    padding-top: 15px;
+    position: initial;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0);
+    flex-direction: row;
+    min-height: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 40px;
   }
 }
 
 .site-list__item {
   text-transform: uppercase;
+  /*test*/
+  /*border-bottom: 1px solid #e6e6e6;*/
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    /*test*/
+    /*border-bottom: none;*/
+    border-top: none;
+    /*--test*/
     justify-content: flex-end;
     margin-left: 33px;
     font-size: 18px;
@@ -32,15 +60,59 @@
 .site-list__index {
   text-decoration: none; /*убираем подчеркивание у ссылок*/
   color: #000000;
+  /*test*/
+  display: block;
+  padding: 20px 0;
+  /*--test*/
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    /*test*/
+    padding: 0;
+    /*--test*/
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
 .site-list__catalog {
   text-decoration: none; /*убираем подчеркивание у ссылок*/
   color: #000000;
+  /*test*/
+  display: block;
+  padding: 20px 0;
+  /*--test*/
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    /*test*/
+    padding: 0;
+    /*--test*/
+  }
 }
 
 .site-list__item--active {

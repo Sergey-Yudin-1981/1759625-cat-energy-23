@@ -30,11 +30,14 @@
   }
 }
 
+.food__wrapper {
+  padding-top: 27px;
+}
+
 .food__heading {
   color: #ffffff;
-  padding-top: 27px;
-  padding-bottom: 25px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -42,23 +45,27 @@
 }
 
 .food__button {
+  /*position: absolute;*/
   padding: 7px 72px;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
-    margin-top: 56px;
+    margin-top: 60px;
     margin-bottom: 526px;
     display: block;
     width: 244px;
-    margin-left: 91px;
+    margin-left: 82px;
+    /*top: 250px;*/
     font-size: 20px;
     line-height: 20px;
+    /*left: 87px;*/
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    /*left: 80px;*/
   }
 }
 
@@ -75,30 +82,34 @@
     color: #000000;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 49px;
+    /*margin-bottom: 662px;*/
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     width: 500px;
+    margin-bottom: 49px;
   }
 }
 
 .food__cup {
-  display: block;
   position: absolute;
   top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
+    display: block;
     z-index: -1;
     top: 225px;
   }
 
   @media (min-width: $desktop-width) {
     top: -63px;
-    left: 560px;
     width: 552px;
     height: 499px;
     z-index: 2;
+    transform: translateX(-30%);
   }
 }

@@ -4,5 +4,12 @@
   text-decoration: none; /*убираем подчеркивание у ссылок*/
   color: #ffffff;
   text-transform: uppercase;
-  display: inline-block;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -6,9 +6,33 @@
   padding-bottom: 21px;
   padding-left: 75px;
   padding-right: 75px;
-  width: 130px;
+  /*width: 130px;*/
   list-style: none;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+  }
+}
+
+.social__link {
+  cursor: pointer;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+    /*fill: rgba(104, 183, 56, 0.3);*/
+  }
+
+  &--facebook {
+    &:hover path {
+      fill: transparent;
+      stroke: #68b738;
+    }
+  }
 }
