@@ -6,6 +6,9 @@
     <title>HTML Academy: Кэт энерджи</title>
     <!--<link href="css/normalize.css" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body page-body--index">
     <header class="page-header page-header--closed">
@@ -109,7 +112,7 @@
           <div class="example__image">
             <div class="example__pic">
                 <div class="example__pic-wrap example__pic-wrap--before">
-                  <picture>
+                  <picture class="">
                     <source media="(min-width: 1440px)" srcset="img/index/cat-fat2.png" alt="Крупная кошка">
                     <source media="(min-width: 768px)" srcset="img/index/cat-fat2.png" alt="Крупная кошка">
                     <img class="example__cat" src="img/index/cat-fat2.png" width="280" height="232" alt="Крупная кошка">
@@ -128,6 +131,14 @@
               <input class="toggle-controls__scale" type="range">
               <button class="example__slider-button" type="button" name="button">Стало</button>
             </div>
+            <!--подготовка тоглера по макету-->
+            <div class="example--controls">
+              <div class="example--scale">
+                <div class="example--bar"></div>
+              </div>
+              <div class="example--toggler example--toggler-min"></div>
+            </div>
+            <!--конец подготовки тоглера по макету-->
           </div>
         </div>
       </section>

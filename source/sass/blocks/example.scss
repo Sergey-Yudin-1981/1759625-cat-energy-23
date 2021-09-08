@@ -314,7 +314,7 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-color: revert;
+    /*background-color: revert;*/
   }
 
   @media (min-width: $desktop-width) {
@@ -329,5 +329,62 @@
 .toggle-controls__scale {
   @media (min-width: $tablet-width) {
     width: 428px;
+  }
+}
+
+/*тоглер по макету*/
+.example--controls {
+  position: relative;
+}
+
+.example--scale { /*общая шкала*/
+  position: relative;
+  /*display: flex;
+  align-items: center;*/
+  margin: 0 auto;
+  width: 130px;
+  height: 14px;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    background: #dcdcdc;
+    border: none;
+    height: 6px;
+    width: 428px;
+  }
+}
+
+.example--bar {
+  position: absolute;
+  margin: 3px;
+  width: 65px;
+  height: 8px;
+  background: #68b738;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.example--toggler {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.example--toggler-min { /*положение курсора левого*/
+  @media (min-width: $tablet-width) {
+    background-color: #68b738;
   }
 }

@@ -1,4 +1,4 @@
-const example = document.querySelector('.example');
+const example = document.querySelector('.example__pic');
 const range = document.querySelector('.toggle-controls__scale');
 const beforeWrap = document.querySelector('.example__pic-wrap--before');
 const afterWrap = document.querySelector('.example__pic-wrap--after');
