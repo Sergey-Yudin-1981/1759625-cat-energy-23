@@ -10,6 +10,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
+  margin-bottom: 35px;
   position: relative;
   background-color: #ffffff;
   display: inline-block;
@@ -30,8 +31,8 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 6px 76px;
-    /*padding-bottom: 76px;*/
+    padding: 0 6px;
+    margin-bottom: 76px;
 
     br {
       display: none;
@@ -57,9 +58,60 @@
   align-items: center;
   height: 45px;
   position: relative;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
+    margin-bottom: 20px;
+  }
+}
+
+.connection__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+
+  svg {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    path,
+    line {
+      transition: all 0.25s;
+    }
+  }
+
+  input:focus + svg {
+    &.icon-mail {
+
+      path, line {
+        stroke: #68b738;
+      }
+    }
+
+    &.icon-phone {
+      path {
+        fill: #68b738;
+      }
+    }
+  }
+
+  input:invalid + svg {
+
+    &.icon-mail {
+
+      path, line {
+        stroke: #ff8282;
+      }
+    }
+
+    &.icon-phone {
+      path {
+        fill: #ff8282;
+      }
+    }
   }
 }
 
@@ -68,22 +120,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 11px;
-  width: 70px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 16px;
-    background-image: url("../img/form/mail.svg");
-    width: 18px;
-    height: 13px;
-
-    @media (min-width: $tablet-width) {
-      right: 20px;
-    }
-  }
+  width: 50px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -98,21 +135,6 @@
   text-transform: uppercase;
   margin-right: 11px;
   width: 66px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 16px;
-    background-image: url("../img/form/phone.svg");
-    width: 20px;
-    height: 20px;
-
-    @media (min-width: $tablet-width) {
-      right: 20px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

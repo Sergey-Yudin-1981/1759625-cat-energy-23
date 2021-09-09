@@ -1,7 +1,8 @@
 .input-enter {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding-right: 35px;
+  padding-left: 15px;
   font-size: 16px;
   line-height: 18px;
   height: 45px;
@@ -18,8 +19,12 @@
     outline: 0;
   }
 
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 0 19px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: 30px;
     height: 52px;
@@ -238,6 +243,10 @@
 }
 
 .data__item-radio + label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.data__item-radio:focus + label::before {
   border: 1px solid #bababa;
 }
 
