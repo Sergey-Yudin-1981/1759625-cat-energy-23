@@ -56,6 +56,7 @@
   display: flex;
   align-items: center;
   height: 45px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -68,6 +69,21 @@
   text-transform: uppercase;
   margin-right: 11px;
   width: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    background-image: url("../img/form/mail.svg");
+    width: 18px;
+    height: 13px;
+
+    @media (min-width: $tablet-width) {
+      right: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -82,6 +98,21 @@
   text-transform: uppercase;
   margin-right: 11px;
   width: 66px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    background-image: url("../img/form/phone.svg");
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: $tablet-width) {
+      right: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

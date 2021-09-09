@@ -1,5 +1,6 @@
 .contacts__title {
   text-align: left;
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase; /*все заглавные*/
@@ -8,6 +9,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
+    width: 170px;
   }
 
   @media (min-width: $desktop-width) {
