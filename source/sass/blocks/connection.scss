@@ -82,35 +82,34 @@
       transition: all 0.25s;
     }
   }
+}
 
-  input:focus + svg {
-    &.icon-mail {
-
-      path, line {
-        stroke: #68b738;
-      }
-    }
-
-    &.icon-phone {
-      path {
-        fill: #68b738;
-      }
+.input-enter:focus + svg {
+  &.icon-mail {
+    path,
+    line {
+      stroke: #68b738;
     }
   }
 
-  input:invalid + svg {
-
-    &.icon-mail {
-
-      path, line {
-        stroke: #ff8282;
-      }
+  &.icon-phone {
+    path {
+      fill: #68b738;
     }
+  }
+}
 
-    &.icon-phone {
-      path {
-        fill: #ff8282;
-      }
+.input-enter:invalid + svg {
+  &.icon-mail {
+    path,
+    line {
+      stroke: #ff8282;
+    }
+  }
+
+  &.icon-phone {
+    path {
+      fill: #ff8282;
     }
   }
 }
