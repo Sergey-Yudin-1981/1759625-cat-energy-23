@@ -46,9 +46,9 @@
           <h1 class="food__heading">Функциональное <br> питание для котов</h1>
           <p class="food__description title">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png" width="552" height="499" alt="Питание с курицей">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png" width="709" height="609" alt="Питание с курицей">
-            <img class="food__cup" src="img/index-can-mobile.png" width="280" height="270" alt="Питание с курицей">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499" alt="Питание с курицей">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x" width="709" height="609" alt="Питание с курицей">
+            <img class="food__cup" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание с курицей">
           </picture>
           <a class="food__button button" href="form.html">Подобрать программу</a>
         </div>
@@ -136,7 +136,7 @@
               <div class="example--scale">
                 <div class="example--bar"></div>
               </div>
-              <div class="example--toggler example--toggler-min"></div>
+              <button class="example--toggler example--toggler-min" type="button"></button>
             </div>
             <!--конец подготовки тоглера по макету-->
           </div>
@@ -158,7 +158,7 @@
         </picture>
       </section>
       <section class="page-footer__links links container">
-        <a href="/">
+        <a href="index.html">
           <img class="links__icon" src="img/cat-energy.svg" width="129" height="24" alt="Логотип">
         </a>
         <ul class="links__social social">

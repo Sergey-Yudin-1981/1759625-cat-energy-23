@@ -9,6 +9,8 @@ range.addEventListener('input', function (evt) {
   afterWrap.style.width = `${value}%`;
 
   if (window.innerWidth >= 1440) {
+    example.style.backgroundImage = `linear-gradient(to right, #F2F2F2 ${100 - 4*0.5*value}%, #EAEAEA ${4*0.5*value}%)`;
+  } else {
     example.style.backgroundImage = `linear-gradient(to right, #F2F2F2 ${100 - 0.5*value}%, #EAEAEA ${0.5*value}%)`;
   }
 

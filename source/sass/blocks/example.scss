@@ -370,12 +370,17 @@
 }
 
 .example--toggler {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     position: absolute;
-    top: -7px;
+    box-sizing: content-box;
+    padding: 0;
+    top: -8px;
     left: 50%;
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     border: 8px solid #ffffff;
     cursor: pointer;
     border-radius: 50%;

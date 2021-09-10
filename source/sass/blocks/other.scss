@@ -104,10 +104,10 @@
   }
 }
 
-
 .other__input:disabled + label,
 .other__input:disabled + label::before {
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .other__input:checked + label::before {
@@ -123,4 +123,13 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/form/cube-on-hover.svg");
   }
+}
+
+
+.other__input:focus + label::before {
+  background-image: url("../img/form/cube-hover.svg");
+}
+
+.other__input:checked:focus + label::before {
+  background-image: url("../img/form/cube-on.svg");
 }

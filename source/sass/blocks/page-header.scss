@@ -93,7 +93,7 @@
 }
 
 .page-header--closed .site-list {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }

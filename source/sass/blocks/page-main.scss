@@ -13,5 +13,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+
+    /*ретинизация картинки под устроуство с хорошими экранами*/
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-green-max@2x.jpg");
+    }
   }
 }

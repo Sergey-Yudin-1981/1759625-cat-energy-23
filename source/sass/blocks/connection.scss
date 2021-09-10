@@ -10,6 +10,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
+  margin-bottom: 35px;
   position: relative;
   background-color: #ffffff;
   display: inline-block;
@@ -30,8 +31,8 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 6px 76px;
-    /*padding-bottom: 76px;*/
+    padding: 0 6px;
+    margin-bottom: 76px;
 
     br {
       display: none;
@@ -56,9 +57,60 @@
   display: flex;
   align-items: center;
   height: 45px;
+  position: relative;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
+    margin-bottom: 20px;
+  }
+}
+
+.connection__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+
+  svg {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    path,
+    line {
+      transition: all 0.25s;
+    }
+  }
+}
+
+.input-enter:focus + svg {
+  &.icon-mail {
+    path,
+    line {
+      stroke: #68b738;
+    }
+  }
+
+  &.icon-phone {
+    path {
+      fill: #68b738;
+    }
+  }
+}
+
+.input-enter:invalid + svg {
+  &.icon-mail {
+    path,
+    line {
+      stroke: #ff8282;
+    }
+  }
+
+  &.icon-phone {
+    path {
+      fill: #ff8282;
+    }
   }
 }
 
@@ -67,7 +119,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 11px;
-  width: 70px;
+  width: 50px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
