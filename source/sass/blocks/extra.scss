@@ -60,6 +60,10 @@
   height: 290px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-mini-bi@2x.jpg");
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -76,6 +80,10 @@
     background-repeat: no-repeat;
     height: 200px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bi@2x.jpg");
+    }
+
     &::before {
       left: 23%;
     }
@@ -87,6 +95,10 @@
     background-size: cover;
     width: 20%;
     height: 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-max-bi@2x.jpg");
+    }
 
     &::before {
       left: 50%;
