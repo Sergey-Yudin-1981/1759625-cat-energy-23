@@ -1,19 +1,23 @@
 .other {
   border: none;
   padding: 0;
-  padding-bottom: 34px;
+  margin-bottom: 18px;
   position: relative;
   text-align: left;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .other__heading {
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 41px;
   background-color: #ffffff;
   display: inline-block;
-  padding: 0 6px;
+  padding-right: 22px;
 
   &::after {
     content: "";
@@ -22,7 +26,7 @@
     height: 2px;
     background: #68b738;
     width: 10000px;
-    top: 16px;
+    top: 15px;
     left: 0;
     z-index: -1;
   }
@@ -30,12 +34,16 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin-bottom: 62px;
 
     &::after {
       top: 22px;
       left: -2466px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -48,10 +56,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 84px;
   }
 }
 
@@ -59,14 +69,14 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  padding-left: 40px;
+  margin-bottom: 24px;
+  padding-left: 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 32px;
-    padding-left: 53px;
+    margin-bottom: 41px;
+    padding-left: 57px;
   }
 
   label {
@@ -79,7 +89,7 @@
       content: "";
       position: absolute;
       top: -7px;
-      left: -38px;
+      left: -45px;
       width: 30px;
       height: 30px;
       background-image: url("../img/form/cube.svg");
@@ -89,7 +99,7 @@
 
       @media (min-width: $tablet-width) {
         top: -4px;
-        left: -55px;
+        left: -58px;
         width: 40px;
         height: 40px;
         background-size: 40px 40px;

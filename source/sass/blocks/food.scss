@@ -14,7 +14,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 62%;
+  height: 63%;
   position: absolute;
   top: 0;
   right: 0;
@@ -32,6 +32,14 @@
 
 .food__wrapper {
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+  }
 }
 
 .food__heading {
@@ -41,31 +49,34 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
   }
 }
 
 .food__button {
-  /*position: absolute;*/
-  padding: 7px 72px;
+  display: block;
+  padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 26px;
-    margin-top: 60px;
+    padding: 17px 0;
+    margin-top: 49px;
     margin-bottom: 526px;
-    display: block;
     width: 244px;
-    margin-left: 82px;
-    /*top: 250px;*/
+    margin-left: 89px;
     font-size: 20px;
     line-height: 20px;
-    /*left: 87px;*/
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 78px;
+    margin-top: 0;
     margin-bottom: 0;
-    /*left: 80px;*/
   }
 }
 
@@ -73,7 +84,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 302px;
+  margin-bottom: 299px;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
@@ -89,7 +100,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     width: 500px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
   }
 }
 
@@ -102,11 +113,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     z-index: -1;
-    top: 225px;
+    top: 238px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -63px;
+    top: -55px;
     width: 552px;
     height: 499px;
     z-index: 2;

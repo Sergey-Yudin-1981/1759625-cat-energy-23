@@ -9,15 +9,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 43px;
+    margin-top: 45px;
   }
 }
 
 .goals__heading {
+  text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 29px;
-  margin-left: 80px;
+  margin-bottom: 31px;
+  margin-left: 56px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -29,10 +31,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 77%;
+    width: 62%;
     text-align: center;
-    margin-bottom: 73px;
-    margin-left: 134px;
+    margin-bottom: 76px;
+    margin-left: 120px;
   }
 }
 
@@ -54,8 +56,8 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 53px 53px;
-    margin-bottom: 30px;
+    padding: 77px 50px 56px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,38 +71,38 @@
   background-repeat: no-repeat;
   background-size: 50px 53px;
   background-position-x: 10%;
-  background-position-y: 10%;
+  background-position-y: 11%;
 
   @media (min-width: $tablet-width) {
     background-size: 200px 211px;
-    background-position-x: 90%;
-    background-position-y: center;
+    background-position-x: 87%;
+    background-position-y: 52%;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 100px 108px;
-    background-position-x: 10%;
-    background-position-y: 10%;
+    background-position-x: 11%;
+    background-position-y: 16%;
   }
 }
 
 .goals__item--thick {
   background-image: url("../img/index/thick.svg");
   background-repeat: no-repeat;
-  background-size: 50px 53px;
-  background-position-x: 10%;
-  background-position-y: 10%;
+  background-size: 67px 50px;
+  background-position-x: 7%;
+  background-position-y: 11%;
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
-    background-position-x: 90%;
-    background-position-y: center;
+    background-position-x: 93%;
+    background-position-y: 53%;
   }
 
   @media (min-width: $desktop-width) {
     background-size: 134px 100px;
-    background-position-x: 10%;
-    background-position-y: 10%;
+    background-position-x: 8%;
+    background-position-y: 17%;
   }
 }
 
@@ -108,24 +110,28 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   text-align: left;
+  line-height: 18px;
   padding-left: 1px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 56%;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
-    margin-bottom: 48px;
+    padding: 0;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-bottom: 24px;
   }
 }
 
 .goals__button {
+  text-transform: uppercase;
   display: block;
   padding-top: 19px;
   text-align: left;
@@ -135,8 +141,8 @@
   background-image: url("../img/index/arrow.svg");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position-x: 90px;
-  background-position-y: 20px;
+  background-position-x: 104px;
+  background-position-y: 21px;
   cursor: pointer;
 
   &:hover {
@@ -152,15 +158,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-top: 0;
-    background-position-x: 110px;
+    background-position-x: 133px;
     background-position-y: 10px;
   }
 }
-
-/*.goals__button--arrow {
-  background-image: url("../img/index/arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 12px;
-  background-position-x: 10%;
-  background-position-y: 10%;
-}*/

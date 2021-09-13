@@ -10,12 +10,16 @@
 .address__contacts {
   display: flex;
   justify-content: space-between;
+  margin-top: 11px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     /*width: 625px;*/
+    margin-top: 47px;
+    margin-bottom: 41px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 42px;
+    padding: 0 41px;
     justify-content: space-between;
   }
 
@@ -25,7 +29,7 @@
     width: 570px;
     height: 201px;
     position: absolute;
-    top: 65px;
+    top: 50px;
     background-color: #ffffff;
   }
 }
