@@ -8,18 +8,18 @@
 }
 
 .end__button {
-  padding: 7px 44px;
+  padding: 7px 77px;
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 45px;
+    padding: 13px 65px;
     margin-right: 61px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 13px 188px;
-    margin-right: 81px;
+    margin-right: 120px;
   }
 }
 
@@ -27,7 +27,7 @@
   font-family: "Arial", sans-serif;
   text-align: center;
   line-height: 16px;
-  margin-top: 28px;
+  margin-top: 21px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

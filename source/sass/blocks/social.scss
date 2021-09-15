@@ -2,8 +2,8 @@
   margin: 0;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 20px;
-  padding-bottom: 21px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   padding-left: 75px;
   padding-right: 75px;
   /*width: 130px;*/
@@ -29,7 +29,32 @@
     /*fill: rgba(104, 183, 56, 0.3);*/
   }
 
+  &--vk {
+    @media (min-width: $tablet-width) {
+      svg {
+        width: 29px;
+        height: 17px;
+      }
+    }
+  }
+
+  &--instagram {
+    @media (min-width: $tablet-width) {
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
   &--facebook {
+    @media (min-width: $tablet-width) {
+      svg {
+        width: 23px;
+        height: 29px;
+      }
+    }
+
     &:hover path {
       fill: transparent;
       stroke: #68b738;

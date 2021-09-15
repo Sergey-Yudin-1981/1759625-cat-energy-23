@@ -20,7 +20,7 @@
 }
 
 .cards__item {
-  height: 130px;
+  height: 128px;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +28,7 @@
     padding-right: 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
-    height: 139px;
+    height: 137px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +49,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,9 +64,15 @@
   line-height: 16px;
   text-align: left;
   margin: 0;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 13px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
@@ -76,7 +82,7 @@
 
 .cards__table {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: left;
   font-size: 14px;
   line-height: 14px;
@@ -90,13 +96,17 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    width: 279px;
+    width: 288px;
   }
 }
 
 .cards__cell-1 {
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -109,7 +119,7 @@
 }
 
 .cards__button {
-  padding: 10px 37%;
+  padding: 8px 37%;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -118,6 +128,6 @@
 
   @media (min-width: $desktop-width) {
     width: 130px;
-    padding: 7px 5%;
+    padding: 7px 6%;
   }
 }

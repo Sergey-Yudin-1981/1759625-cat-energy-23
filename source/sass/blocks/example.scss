@@ -1,24 +1,32 @@
 .example {
   background-color: #eaeaea;
   position: relative;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
+    padding-bottom: 36px;
 
     &::before {
       content: "";
       display: block;
       width: 100%;
-      height: 462px;
+      height: 441px;
       position: absolute;
       bottom: 0;
       background-color: #eaeaea;
       z-index: -1;
+
+      @media (min-width: $desktop-width) {
+        height: 439px;
+        background-image: linear-gradient(to right, #f2f2f2 73%, #eaeaea 27%);
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 656px;
+    padding-bottom: 0;
   }
 }
 
@@ -27,6 +35,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 0;
   }
 }
 
@@ -51,13 +63,13 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 58px;
-    margin-bottom: 146px;
+    margin-bottom: 149px;
   }
 }
 
 .example__description {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
@@ -73,7 +85,7 @@
 }
 
 .example__container {
-  margin-bottom: 42px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -94,14 +106,13 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
   height: 56px;
   justify-content: space-between;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 408px;
-    height: 77px;
+    height: 72px;
     justify-content: flex-start;
     margin: 0;
   }
@@ -150,8 +161,8 @@
     width: 126px;
     font-size: 14px;
     line-height: 14px;
-    top: 53px;
-    left: 19px;
+    top: 49px;
+    left: 15px;
     background-color: #ffffff;
   }
 
@@ -175,8 +186,8 @@
     width: 146px;
     font-size: 14px;
     line-height: 14px;
-    top: 53px;
-    left: 7px;
+    top: 49px;
+    left: 6px;
     background-color: #ffffff;
   }
 
@@ -208,7 +219,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 180px;
+    width: 187px;
     justify-content: flex-end;
     flex-direction: column;
   }
@@ -221,6 +232,7 @@
 }
 
 .example__cash-description {
+  text-transform: uppercase;
   margin-right: 5px;
 
   @media (min-width: $tablet-width) {
@@ -237,8 +249,8 @@
   height: 232px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 620px;
+    width: 587px;
+    height: 547px;
   }
 }
 
@@ -252,56 +264,53 @@
   line-height: 20px;
   cursor: pointer;
   padding: 0;
+  margin: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted #dcdcdc;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 23px;
+  }
+}
+
+.example__slider-double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__slider {
   @media (min-width: $desktop-width) {
-    /*margin-top: -143px;*/
     margin: 0 auto;
   }
 }
 
 .example__image {
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 33px;
-
-    /*&::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 462px;
-      position: absolute;
-      bottom: 0;
-      background-color: #eaeaea;
-      z-index: -1;
-    }*/
   }
 }
 
 .example__pic {
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   position: relative;
   height: 232px;
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 33px;
-    height: 622px;
-    width: 708px;
+    padding-bottom: 0;
+    height: 559px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    /*position: absolute;
-    top: 21px;
-    left: 0;
-    right: 0;
-*/
     padding: 20px 0 0;
     position: relative;
-    /*height: 520px;*/
+    height: 538px;
   }
 }
 
@@ -311,14 +320,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #eaeaea;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    /*background-color: revert;*/
+    background-image: linear-gradient(#ffffff 218px, #eaeaea 218px);
   }
 
   @media (min-width: $desktop-width) {
-    /*position: relative;*/
+    background-image: linear-gradient(to button, #ffffff 192px, #f2f2f2 192px);
   }
 }
 
@@ -326,23 +335,27 @@
   overflow: hidden;
 }
 
-.toggle-controls__scale {
+.example__slider-toggle {
+  width: 106px;
+
   @media (min-width: $tablet-width) {
     width: 428px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to button, #ffffff 192px, #eaeaea 192px);
   }
 }
 
 /*тоглер по макету*/
-.example--controls {
+.example__controls {
   position: relative;
 }
 
-.example--scale { /*общая шкала*/
+.example__scale { /*общая шкала*/
   position: relative;
-  /*display: flex;
-  align-items: center;*/
   margin: 0 auto;
-  width: 130px;
+  width: 80px;
   height: 14px;
   background: #ffffff;
   border: 1px solid #cdcdcd;
@@ -356,11 +369,11 @@
   }
 }
 
-.example--bar {
+.example__bar {
   position: absolute;
   margin: 3px;
-  width: 65px;
-  height: 8px;
+  width: 47%;
+  height: 6px;
   background: #68b738;
   border-radius: 6px;
 
@@ -369,7 +382,7 @@
   }
 }
 
-.example--toggler {
+.example__toggler {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -377,18 +390,18 @@
     position: absolute;
     box-sizing: content-box;
     padding: 0;
-    top: -8px;
+    top: -14px;
     left: 50%;
-    width: 6px;
-    height: 6px;
-    border: 8px solid #ffffff;
+    width: 8px;
+    height: 8px;
+    border: 13px solid #ffffff;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   }
 }
 
-.example--toggler-min { /*положение курсора левого*/
+.example__toggler-min { /*положение курсора левого*/
   @media (min-width: $tablet-width) {
     background-color: #68b738;
   }

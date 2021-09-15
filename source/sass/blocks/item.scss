@@ -1,5 +1,5 @@
 .item {
-  padding-bottom: 20px;
+  padding-bottom: 26px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
@@ -7,24 +7,12 @@
     padding-bottom: 0;
     border-bottom: none;
     min-height: 475px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     position: relative;
 
     &:nth-child(2n) {
       padding-top: 5px;
     }
-
-    /*&::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 426px;
-      position: absolute;
-      top: 81px;
-      box-sizing: border-box;
-      border: 2px solid #f2f2f2;
-      z-index: -1;
-    }*/
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +28,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -59,6 +47,7 @@
 
       @media (min-width: $desktop-width) {
         height: 431px;
+        top: 86px;
       }
     }
   }
@@ -83,7 +72,7 @@
     content: "";
     position: absolute;
     background-image: url("../img/plus30.svg");
-    top: 58%;
+    top: 57%;
     left: 50%;
     transform: translateX(-50%);
     width: 30px;
@@ -91,7 +80,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/plus.svg");
-      top: 123px;
+      top: 134px;
       width: 60px;
       height: 60px;
     }
@@ -127,17 +116,19 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    padding-bottom: 33px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding-top: 46px;
-    padding-bottom: 17px;
+    margin-top: 6px;
+    margin-bottom: 32px;
   }
 }
 
 .item__heading {
+  margin-top: 17px;
+  margin-bottom: 12px;
   width: 80px;
   font-size: 16px;
   line-height: 20px;
@@ -150,11 +141,13 @@
     text-align: center;
     width: 158px;
     margin: auto;
-    padding-bottom: 21px;
+    margin-top: 28px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    padding-bottom: 18px;
   }
 }
 
@@ -196,16 +189,16 @@
 
 .item__button {
   margin: 0;
-  padding: 10px 107px;
+  padding: 8px 107px;
   display: inline-block;
   /*margin-bottom: 25px;*/
 
   @media (min-width: $tablet-width) {
-    padding: 10px 93px;
+    padding: 8px 93px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 53px;
+    padding: 8px 53px;
   }
 }
 
@@ -222,12 +215,12 @@
     width: 134px;
     font-size: 20px;
     line-height: 22px;
-    margin-top: 226px;
+    margin-top: 240px;
     margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 247px;
+    margin-top: 239px;
   }
 }
 
@@ -251,11 +244,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 13px 93px;
+    padding: 13px 85px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 53px;
+    padding: 13px 53px;
   }
 }
 
