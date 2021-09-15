@@ -157,7 +157,7 @@ const build = gulp.series(
   ),
 );
 
- exports.build = build;
+exports.build = build;
 
 //default
 
