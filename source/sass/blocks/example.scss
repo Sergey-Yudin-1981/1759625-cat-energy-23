@@ -11,14 +11,15 @@
       content: "";
       display: block;
       width: 100%;
-      height: 462px;
+      height: 441px;
       position: absolute;
       bottom: 0;
       background-color: #eaeaea;
       z-index: -1;
 
       @media (min-width: $desktop-width) {
-        height: 514px;
+        height: 439px;
+        background-image: linear-gradient(to right, #f2f2f2 73%, #eaeaea 27%);
       }
     }
   }
@@ -319,14 +320,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #eaeaea;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    /*background-color: revert;*/
+    background-image: linear-gradient(#ffffff 218px, #eaeaea 218px);
   }
 
   @media (min-width: $desktop-width) {
-    /*position: relative;*/
+    background-image: linear-gradient(to button, #ffffff 192px, #f2f2f2 192px);
   }
 }
 
@@ -339,6 +340,10 @@
 
   @media (min-width: $tablet-width) {
     width: 428px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to button, #ffffff 192px, #eaeaea 192px);
   }
 }
 
@@ -386,7 +391,7 @@
     box-sizing: content-box;
     padding: 0;
     top: -14px;
-    left: 10px;
+    left: 50%;
     width: 8px;
     height: 8px;
     border: 13px solid #ffffff;
