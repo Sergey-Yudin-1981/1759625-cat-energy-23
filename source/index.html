@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <!--<link href="css/normalize.css" rel="stylesheet">-->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body page-body--index">
-    <header class="page-header page-header--closed">
+    <header class="page-header page-header--closed  page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" alt="cat energy">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" alt="cat energy">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-mini.svg" width="191" height="38" alt="cat energy">
           </picture>
         </a>
@@ -46,8 +46,8 @@
           <h1 class="food__heading">Функциональное <br> питание для котов</h1>
           <p class="food__description title">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499" alt="Питание с курицей">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x" width="709" height="609" alt="Питание с курицей">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
             <img class="food__cup" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание с курицей">
           </picture>
           <a class="food__button button" href="form.html">Подобрать программу</a>
@@ -113,33 +113,36 @@
             <div class="example__pic">
                 <div class="example__pic-wrap example__pic-wrap--before">
                   <picture class="">
-                    <source media="(min-width: 1440px)" srcset="img/index/cat-fat2.png" alt="Крупная кошка">
-                    <source media="(min-width: 768px)" srcset="img/index/cat-fat2.png" alt="Крупная кошка">
-                    <img class="example__cat" src="img/index/cat-fat2.png" width="280" height="232" alt="Крупная кошка">
+                    <source media="(min-width: 1440px)" srcset="img/index/cat-fat2.png 1x, img/index/cat-fat2@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/cat-fat2.png 1x, img/index/cat-fat2@2x.png 2x">
+                    <img class="example__cat" src="img/index/cat-fat2.png" srcset="img/index/cat-fat2@2x.png 2x" width="280" height="232" alt="Крупная кошка">
                   </picture>
                 </div>
                 <div class="example__pic-wrap example__pic-wrap--after" style="width: 28%;">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/index/cat-skinny2.png" alt="Крупная кошка">
-                    <source media="(min-width: 768px)" srcset="img/index/cat-skinny2.png" alt="Крупная кошка">
-                    <img class="example__cat" src="img/index/cat-skinny2.png" width="280" height="232" alt="Крупная кошка">
+                    <source media="(min-width: 1440px)" srcset="img/index/cat-skinny2.png 1x, index/cat-skinny2@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/cat-skinny2.png 1x, index/cat-skinny2@2x.png 2x">
+                    <img class="example__cat" src="img/index/cat-skinny2.png" srcset="index/cat-skinny2@2x.png 2x" width="280" height="232" alt="Крупная кошка">
                   </picture>
                 </div>
             </div>
-            <div class="example__slider example__slider-controls"> <!--Бегунок СТАЛО БЫЛО-->
-              <button class="example__slider-button" type="button" name="button">Было</button>
+            <!--<div class="example__slider example__slider-controls"> Бегунок СТАЛО БЫЛО-->
+              <!--<button class="example__slider-button" type="button" name="button">Было</button>
               <input class="example__slider-toggle" type="range">
               <button class="example__slider-button" type="button" name="button">Стало</button>
-            </div>
+            </div>-->
             <!--подготовка тоглера по макету-->
-            <!--
-            <div class="example__controls">
-              <div class="example__scale">
-                <div class="example__bar"></div>
+            <div class="example__slider-double">
+              <button class="example__slider-button" type="button" name="button">Было</button>
+              <div class="example__controls">
+                <div class="example__scale">
+                  <div class="example__bar"></div>
+                </div>
+                <button class="example__toggler example__toggler-min" type="button"></button>
               </div>
-              <button class="example__toggler example__toggler-min" type="button"></button>
+              <button class="example__slider-button" type="button" name="button">Стало</button>
             </div>
-          -->
+
             <!--конец подготовки тоглера по макету-->
           </div>
         </div>
@@ -154,8 +157,8 @@
           </div>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-max.jpg" width="1440" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <source media="(min-width: 768px)" srcset="img/map.jpg" width="768" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1440px)" srcset="img/map-max.jpg">
+          <source media="(min-width: 768px)" srcset="img/map.jpg">
           <img src="img/map-min.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </section>
@@ -195,20 +198,7 @@
         </a>
       </section>
     </footer>
-    <script src="js/script.min.js"></script>
-    <script>
-      var navMain = document.querySelector('.page-header');
-      var navToggle = document.querySelector('.page-header__toggle');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('page-header--closed')) {
-          navMain.classList.remove('page-header--closed');
-          navMain.classList.add('page-header--opened');
-        } else {
-          navMain.classList.add('page-header--closed');
-          navMain.classList.remove('page-header--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/burger.min.js"></script>
   </body>
 </html>

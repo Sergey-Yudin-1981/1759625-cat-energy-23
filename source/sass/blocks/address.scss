@@ -5,12 +5,16 @@
 .address img {
   width: 100%;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .address__contacts {
   display: flex;
   justify-content: space-between;
-  margin-top: 11px;
+  margin-top: 13px;
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {

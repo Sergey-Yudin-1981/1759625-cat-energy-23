@@ -45,7 +45,7 @@
 .food__heading {
   color: #ffffff;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -106,6 +106,8 @@
 
 .food__cup {
   position: absolute;
+  width: 280px;
+  height: 270px;
   top: 167px;
   left: 50%;
   transform: translateX(-50%);
@@ -114,6 +116,8 @@
     display: block;
     z-index: -1;
     top: 238px;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {

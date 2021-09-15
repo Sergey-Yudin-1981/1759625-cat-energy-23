@@ -19,7 +19,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 31px;
-  margin-left: 56px;
+  margin-left: 40px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -75,7 +75,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 200px 211px;
-    background-position-x: 87%;
+    background-position-x: 88%;
     background-position-y: 52%;
   }
 
@@ -95,7 +95,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
-    background-position-x: 93%;
+    background-position-x: 94%;
     background-position-y: 53%;
   }
 
@@ -141,8 +141,8 @@
   background-image: url("../img/index/arrow.svg");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position-x: 104px;
-  background-position-y: 21px;
+  background-position-x: 102px;
+  background-position-y: 22px;
   cursor: pointer;
 
   &:hover {

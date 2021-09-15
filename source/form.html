@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <!--<link href="css/normalize.css" rel="stylesheet">-->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
@@ -15,8 +15,8 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" alt="cat energy">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" alt="cat energy">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-mini.svg" width="191" height="38" alt="cat energy">
           </picture>
         </a>
@@ -158,8 +158,8 @@
           </div>
         </div>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-max.jpg" width="1440" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          <source media="(min-width: 768px)" srcset="img/map.jpg" width="768" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1440px)" srcset="img/map-max.jpg">
+          <source media="(min-width: 768px)" srcset="img/map.jpg">
           <img src="img/map-min.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </section>
@@ -199,18 +199,6 @@
         </a>
       </section>
     </footer>
-    <script>
-      var navMain = document.querySelector('.page-header');
-      var navToggle = document.querySelector('.page-header__toggle');
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('page-header--closed')) {
-          navMain.classList.remove('page-header--closed');
-          navMain.classList.add('page-header--opened');
-        } else {
-          navMain.classList.add('page-header--closed');
-          navMain.classList.remove('page-header--opened');
-        }
-      });
-    </script>
+    <script src="js/burger.min.js"></script>
   </body>
 </html>

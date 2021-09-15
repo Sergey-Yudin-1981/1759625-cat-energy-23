@@ -68,7 +68,7 @@
 
 .example__description {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
@@ -105,7 +105,6 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
   height: 56px;
   justify-content: space-between;
   margin-bottom: 22px;
@@ -249,8 +248,6 @@
   height: 232px;
 
   @media (min-width: $tablet-width) {
-    /*width: 708px;
-    height: 620px;*/
     width: 587px;
     height: 547px;
   }
@@ -266,38 +263,33 @@
   line-height: 20px;
   cursor: pointer;
   padding: 0;
+  margin: 0 18px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted #dcdcdc;
     font-size: 20px;
     line-height: 30px;
-    margin: 0 17px;
+    margin: 0 23px;
   }
+}
+
+.example__slider-double {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__slider {
   @media (min-width: $desktop-width) {
-    /*margin-top: -143px;*/
     margin: 0 auto;
   }
 }
 
 .example__image {
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 33px;
-
-    /*&::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 462px;
-      position: absolute;
-      bottom: 0;
-      background-color: #eaeaea;
-      z-index: -1;
-    }*/
   }
 }
 
@@ -310,18 +302,11 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    /*height: 622px;
-    width: 708px;*/
     height: 559px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    /*position: absolute;
-    top: 21px;
-    left: 0;
-    right: 0;
-*/
     padding: 20px 0 0;
     position: relative;
     height: 538px;
@@ -382,8 +367,8 @@
 .example__bar {
   position: absolute;
   margin: 3px;
-  width: 50%;
-  height: 8px;
+  width: 47%;
+  height: 6px;
   background: #68b738;
   border-radius: 6px;
 
@@ -400,11 +385,11 @@
     position: absolute;
     box-sizing: content-box;
     padding: 0;
-    top: -8px;
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    border: 8px solid #ffffff;
+    top: -14px;
+    left: 10px;
+    width: 8px;
+    height: 8px;
+    border: 13px solid #ffffff;
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);

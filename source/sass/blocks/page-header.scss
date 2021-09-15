@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     width: 84%;
     max-width: 1450px;
-    padding: 53px 0;
+    padding: 53px 0 79px;
   }
 }
 
@@ -66,7 +66,7 @@
   padding: 0;
   position: absolute;
   top: 17px;
-  right: 0;
+  right: -6px;
   z-index: 2;
   display: block;
   width: 36px;
@@ -83,7 +83,7 @@
 .page-header--closed .page-header__toggle::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 6px;
   width: 24px;
   height: 2px;
@@ -94,6 +94,18 @@
 .page-header--closed .site-list {
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+}
+
+.page-header--nojs .page-header__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-header--nojs .site-list {
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }
 

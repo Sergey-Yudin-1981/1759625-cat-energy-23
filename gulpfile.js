@@ -44,9 +44,9 @@ exports.html = html;
 
 //Scripts
 const scripts = () => {
-  return gulp.src("source/js/script.js")
+  return gulp.src("source/js/burger.js")
   .pipe(terser())
-  .pipe(rename("script.min.js"))
+  .pipe(rename("burger.min.js"))
   .pipe(gulp.dest("build/js"));
 }
 
@@ -97,6 +97,7 @@ const copy = (done) => {
     "source/*.ico",
     "source/img/**/*.svg",
     "!source/img/favicon/*.svg",
+    "source/*.webmanifest",
   ], {
     base: "source"
   })
@@ -138,7 +139,7 @@ const watcher = () => {
 }
 
 //exports.default = gulp.series(
-//  styles, html, scripts, copyImages, createWebp, spryte, copy, server, watcher
+// styles, html, scripts, copyImages, createWebp, spryte, copy, server, watcher
 //);
 
 //Build
@@ -156,7 +157,7 @@ const build = gulp.series(
   ),
 );
 
-exports.build = build;
+ exports.build = build;
 
 //default
 
@@ -174,4 +175,4 @@ exports.default = gulp.series(
   gulp.series(
     server,
     watcher
-));
+  ));
